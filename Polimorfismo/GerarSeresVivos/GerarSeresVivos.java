@@ -6,7 +6,7 @@ public class GerarSeresVivosPolimorfismoDois {
 
 public static void main(String[] args) {
 
-    // cria objetos de subclasse
+    // Cria objetos de subclasse
     Pessoas pessoaUm = new Pessoas (1977, "marcelo",0);
     Arvore arvoreUm = new Arvore (1913,0,"Carvalho",0);
 
@@ -20,13 +20,13 @@ public static void main(String[] args) {
 
     SeresVivos seres [] = new SeresVivos[2];
 
-    // inicializa o array
+    // Inicializa o array
     seres[0] =  pessoaUm;
     seres[1] = arvoreUm;
 
     System.out.println("\nSeres Vivos processados utilizando POLIMORFISMO \n");
 
-    //processa genericamente cada elemento /objeto
+    // Processa genericamente cada elemento /objeto
     for (SeresVivos serCorrente: seres){
         serCorrente.gerarIdade(2020);
         System.out.println(serCorrente);
